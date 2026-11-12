@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of [Your Name] — IT student and aspiring web developer." />
+  <title>[Your Name] | Portfolio</title>
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">SELF PORTFOLIO</a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Contact Me</a>
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></g></svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="hero-top">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Argel Marc S. Sadiasa</h1>
+        <span class="name-dash" aria-hidden="true"></span>
+      </div>
+
+      <div class="hero-photo">
+        <img src="images/profile.jpg" alt="Photo of Argel Marc S. Sadiasa" />
+      </div>
+
+        <div class="hero-panel">
+          <h2 class="tagline">
+            <span class="typed" id="typed">BSIT Student and UI/UX Enthusiast</span><span class="cursor">|</span>
+          </h2>
+          <p class="intro">
+            A BS Information Technology student at La Consolacion University Philippines
+            dedicated to UI/UX design, driven by a passion for solving user problems through
+            thoughtful wireframing, prototyping, and polished visual design.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/ArgelMarc" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/argel.marc" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.62 23.1 24 18.1 24 12.07z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/argelmarcc/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="22" height="22"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="17.6" cy="6.4" r="1.4" fill="currentColor"/></svg>
+            </a>
+            <a href="mailto:argelmarcsadiasa@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.24-8 5-8-5V6l8 5 8-5v2.24z"/></svg>
+            </a>
+          </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Get to know me</p>
+          <h2 class="section-title">About <span class="accent-word">Me</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <h3>Who I Am</h3>
+            <p>
+              As an IT student from Paombong, Bulacan studying at La Consolacion University
+              Philippines, I view technology as a bridge between creativity and functional
+              innovation. My academic focus centers on graphic design and UI/UX—learning to
+              design user interfaces that are both aesthetically appealing and seamlessly
+              intuitive. I aim to apply everything I learn throughout my degree to real-world
+              projects, build meaningful professional relationships, and work toward my
+              long-term career goals.
+            </p>
+            <ul class="info-list">
+              <li><strong>Name:</strong> Argel Marc S. Sadiasa</li>
+              <li><strong>Course:</strong> BS Information Technology</li>
+              <li><strong>Location:</strong> Paombong, Bulacan</li>
+              <li><strong>Email:</strong> argelmarcsadiasa@gmail.com</li>
+            </ul>
+          </div>
+
+          <div class="education reveal">
+            <h3>Educational Background</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="timeline-date">2023 – Present</span>
+                <h4>Bachelor of Science in Information Technology</h4>
+                <p>La Consolacion University Philippines</p>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-date">2021 – 2022</span>
+                <h4>Senior High School — Science, Technology, Engineering, and Mathematics</h4>
+                <p>San Roque National High School</p>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-date">20XX – 20XX</span>
+                <h4>Junior High School</h4>
+                <p>San Roque National High School</p>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-date">2015 – 2016</span>
+                <h4>Elementary School</h4>
+                <p>Pulo Elementary School</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">What I can do</p>
+          <h2 class="section-title">Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>Programming &amp; Web</h3>
+            <div class="skill"><div class="skill-label"><span>HTML5</span><span>90%</span></div><div class="bar"><div class="fill" data-width="90"></div></div></div>
+            <div class="skill"><div class="skill-label"><span>CSS3</span><span>85%</span></div><div class="bar"><div class="fill" data-width="85"></div></div></div>
+            <div class="skill"><div class="skill-label"><span>Java</span><span>60%</span></div><div class="bar"><div class="fill" data-width="60"></div></div></div>
+            <div class="skill"><div class="skill-label"><span>C#</span><span>50%</span></div><div class="bar"><div class="fill" data-width="50"></div></div></div>
+            <div class="skill"><div class="skill-label"><span>JavaScript</span><span>25%</span></div><div class="bar"><div class="fill" data-width="25"></div></div></div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3>Design Tools</h3>
+            <div class="skill"><div class="skill-label"><span>Canva</span><span>90%</span></div><div class="bar"><div class="fill" data-width="90"></div></div></div>
+            <div class="skill"><div class="skill-label"><span>Adobe</span><span>70%</span></div><div class="bar"><div class="fill" data-width="70"></div></div></div>
+            <div class="skill"><div class="skill-label"><span>Figma</span><span>60%</span></div><div class="bar"><div class="fill" data-width="60"></div></div></div>
+            <div class="skill"><div class="skill-label"><span>Lightroom</span><span>70%</span></div><div class="bar"><div class="fill" data-width="70"></div></div></div>
+            <div class="skill"><div class="skill-label"><span>Ibis Paint X</span><span>75%</span></div><div class="bar"><div class="fill" data-width="75"></div></div></div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3>Soft Skills</h3>
+            <div class="chips">
+              <span class="chip">Creative</span>
+              <span class="chip">Attention to Detail</span>
+              <span class="chip">Time Management</span>
+              <span class="chip">Problem Solving</span>
+              <span class="chip">Communication</span>
+              <span class="chip">Ideation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-gray" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">My recent work</p>
+            <h2 class="section-title">Projects</h2>
+          </div>
+          <div class="slider-nav">
+            <button class="slider-btn prev" type="button" aria-label="Scroll projects left">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="slider-btn next" type="button" aria-label="Scroll projects right">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="projects-slider">
+        <div class="projects-grid" tabindex="0" aria-label="Projects, scroll left or right">
+          <article class="project-card reveal">
+            <div class="project-img"><img src="images/campus-event-hub.png" alt="Screenshot of the Campus Event Hub home page" style="object-position: left top;" /></div>
+            <div class="project-body">
+              <h3>Campus Event Hub</h3>
+              <p>The Campus Event Hub is LCUP's centralized platform for event publishing, calendar views, GSuite registration, and attendance tracking. It eliminates fragmented communication across physical boards, social media, and classroom notices while replacing tools like Facebook and Google Forms with real-time updates and automated conflict resolution.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-img"><img src="images/cafe-rencontre.png" alt="Welcome screen of the Café Rencontre Figma design" /></div>
+            <div class="project-body">
+              <h3>Café Rencontre</h3>
+              <p>A Figma design for Barci International Café, named Café Rencontre.</p>
+              <div class="tags"><span>Figma</span><span>UI/UX</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-img"><img src="images/capstone-prototype.png" alt="Screenshot of the Capstone prototype website design" style="object-position: left top;" /></div>
+            <div class="project-body">
+              <h3>Capstone Prototype</h3>
+              <p>A website design prototype designed in Canva.</p>
+              <div class="tags"><span>Canva</span><span>UI/UX</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-img"><img src="images/capstone-trifold-brochure.png" alt="Mockup of the Campus Event Hub trifold brochure" /></div>
+            <div class="project-body">
+              <h3>Capstone Trifold Brochure</h3>
+              <p>A trifold brochure designed in Canva for our capstone project marketing.</p>
+              <div class="tags"><span>Canva</span><span>UI/UX</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-img"><img src="images/newspaper-design.png" alt="Mockup of the P.Y.A.N Pulse newspaper for Pinagtulayan Elementary School" /></div>
+            <div class="project-body">
+              <h3>Newspaper Design</h3>
+              <p>A newspaper designed in Canva for the Pinagtulayan Elementary School Facebook page.</p>
+              <div class="tags"><span>Canva</span><span>UI/UX</span></div>
+            </div>
+          </article>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="achievements">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Recognition &amp; learning</p>
+          <h2 class="section-title">Achievements</h2>
+        </div>
+
+        <div class="achievements-grid">
+          <div class="ach-head" aria-hidden="true"><span>Title</span><span>Category</span><span>Details</span></div>
+
+          <div class="achievement-card reveal">
+            <div class="ach-icon">🏆</div>
+            <span class="ach-type">Award</span>
+            <h3>JPSSITE Week Poster Making Competition</h3>
+            <p>3rd Place · 1st Year</p>
+          </div>
+          <div class="achievement-card reveal">
+            <div class="ach-icon">🏆</div>
+            <span class="ach-type">Award</span>
+            <h3>JPSSITE Week Poster Making Competition</h3>
+            <p>2nd Place · 2nd Year</p>
+          </div>
+
+          <div class="achievement-card reveal">
+            <div class="ach-icon">🎓</div>
+            <span class="ach-type">Dean's List</span>
+            <h3>Dean's Lister</h3>
+            <p>JPSSITE Organization · 2nd Year</p>
+          </div>
+          <div class="achievement-card reveal">
+            <div class="ach-icon">🎓</div>
+            <span class="ach-type">Dean's List</span>
+            <h3>Dean's Lister</h3>
+            <p>JPSSITE Organization · 3rd Year</p>
+          </div>
+
+          <div class="achievement-card reveal">
+            <div class="ach-icon">📜</div>
+            <span class="ach-type">Certificate</span>
+            <h3>Microsoft Excel Certified</h3>
+            <p>Certiport</p>
+          </div>
+          <div class="achievement-card reveal">
+            <div class="ach-icon">📜</div>
+            <span class="ach-type">Certificate</span>
+            <h3>Microsoft Access Certified</h3>
+            <p>Certiport</p>
+          </div>
+          <div class="achievement-card reveal">
+            <div class="ach-icon">📜</div>
+            <span class="ach-type">Certificate</span>
+            <h3>C# Certification</h3>
+          </div>
+
+          <div class="achievement-card reveal">
+            <div class="ach-icon">🎤</div>
+            <span class="ach-type">Seminar</span>
+            <h3>JPSSITE PLUV 7.3 Integrate: Bridging Technology, Business and Career Opportunities</h3>
+            <p>JPSSITE</p>
+          </div>
+          <div class="achievement-card reveal">
+            <div class="ach-icon">🎤</div>
+            <span class="ach-type">Seminar</span>
+            <h3>JPSSITE PACE Level Up Ver. 7.1: Post-Event Highlights</h3>
+            <p>JPSSITE</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Let's talk</p>
+          <h2 class="section-title">Contact <span class="accent-word">Me</span></h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Get in touch</h3>
+            <p>I'm open to internships, collaborations, and freelance work. Feel free to reach out!</p>
+            <ul>
+              <li><span class="ci-icon">✉️</span><div><strong>Email</strong><a href="mailto:argelmarcsadiasa@gmail.com">argelmarcsadiasa@gmail.com</a></div></li>
+              <li><span class="ci-icon">📱</span><div><strong>Phone</strong><a href="tel:+639055308394">09055308394</a></div></li>
+              <li><span class="ci-icon">💻</span><div><strong>GitHub</strong><a href="https://github.com/ArgelMarc" target="_blank" rel="noopener">github.com/ArgelMarc</a></div></li>
+              <li><span class="ci-icon">📍</span><div><strong>Location</strong><span>San Isidro 1 Paombong Bulacan</span></div></li>
+              <li class="ci-social"><span class="ci-icon"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.62 23.1 24 18.1 24 12.07z"/></svg></span><div><strong>Facebook</strong><a href="https://www.facebook.com/argel.marc" target="_blank" rel="noopener">facebook.com/argel.marc</a></div></li>
+              <li><span class="ci-icon"><svg viewBox="0 0 24 24" width="16" height="16"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="17.6" cy="6.4" r="1.4" fill="currentColor"/></svg></span><div><strong>Instagram</strong><a href="https://www.instagram.com/argelmarcc/" target="_blank" rel="noopener">instagram.com/argelmarcc</a></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Argel Marc S. Sadiasa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
